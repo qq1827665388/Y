@@ -1,5 +1,7 @@
-def greet(name: str) -> str:
-    """返回英文问候语"""
+def greet(name: str, lang: str = "en") -> str:
+    """返回问候语, 支持中英文"""
+    if lang == "zh":
+        return f"你好, {name}!"
     return f"Hello, {name}!"
 
 
